@@ -10,12 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
     
-   
+    @IBOutlet weak var displayName: UILabel!
+    var fNames = ["Cara","Erika","Rene","Sarah", "Brad", "Jung", "Robert", "Kevin", "Hsia-Chou", "Randy", "Jayden", "Reeve", "Jacquin"]
+    var index = 0
+    
 //links to Outlets can be included here
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        displayName.text = self.fNames[index]
         let cara = Person(firstName: "Cara", lastName: "D")
         let erika = Person(firstName: "Erika", lastName: "Feldman")
         let rene = Person(firstName: "Rene", lastName: "G")
@@ -32,10 +35,27 @@ class ViewController: UIViewController {
     var people = [Person]()
         let classPeople = [cara,erika,rene,sarah, brad, jung, robert,kevin, hsia, randy, jayden, reeve, jacquin]
         
-        let classFNames = ["Cara","Erika","Rene","Sarah", "Brad", "Jung", "Robert", "Kevin", "Hsia-Chou", "Randy", "Jayden", "Reeve", "Jacquin"]
-        
         self.view.backgroundColor = UIColor.purpleColor()
     }
+        
+    @IBAction func rightPressed(sender: UIButton) {
+        if self.fNames.count > 0{
+            
+        }
+        println("right pressed")
+        if self.index < self.fNames.count - 1 {
+        index++ //same as index = index +1
+        self.displayName.text = self.fNames[index]
+        }
+        
+    }
+    @IBAction func leftPressed(sender: UIButton) {
+        println("left pressed")
+        if self.index > 0 {
+            self.index--
+            self.displayName.text = self.fNames[index]}
+        }
+
     
 override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(animated)
@@ -47,20 +67,8 @@ override func viewDidAppear(animated: Bool){
     super.viewDidAppear(animated)
     println("view did appear")
 }
-//can link IBA action here:
-
-    @IBAction func leftPressed(sender: UIButton) {
-        set @IBOutlet(self.displayName.text = classFNames[i])
-        func insertText(_aString: AnyObject)
-    }
- //can link IBA action here:
-
-    @IBAction func rightPressed(sender: UIButton) {
-        
-    }
-//link UILabel object Outlet
     
-    @IBOutlet weak var displayName: UILabel!
+
     
 override func viewWillDisappear(animated: Bool) {
     super.viewWillDisappear(animated)

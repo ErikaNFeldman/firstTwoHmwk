@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5456C6941AA6334600F1A360 /* enfClassRoster.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = enfClassRoster.xcodeproj; sourceTree = SOURCE_ROOT; };
 		54B796291A9693B700D181F2 /* enfClassRoster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = enfClassRoster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B7962D1A9693B700D181F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54B7962E1A9693B700D181F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +59,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5456C6951AA6334600F1A360 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
 		54B796201A9693B700D181F2 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +92,7 @@
 				54B796371A9693B700D181F2 /* LaunchScreen.xib */,
 				54B796A11A97C55F00D181F2 /* Controller */,
 				54B796301A9693B700D181F2 /* ViewController.swift */,
+				5456C6941AA6334600F1A360 /* enfClassRoster.xcodeproj */,
 				54B7962C1A9693B700D181F2 /* Supporting Files */,
 			);
 			path = enfClassRoster;
@@ -206,6 +213,12 @@
 			mainGroup = 54B796201A9693B700D181F2;
 			productRefGroup = 54B7962A1A9693B700D181F2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5456C6951AA6334600F1A360 /* Products */;
+					ProjectRef = 5456C6941AA6334600F1A360 /* enfClassRoster.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				54B796281A9693B700D181F2 /* enfClassRoster */,
